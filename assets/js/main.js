@@ -1,8 +1,3 @@
-/* Array de Plans & Pricing */
-[
-  {
-    id: 1,
-    nombre: "Ableton",
-    level: 1,
-  },
-];
+window.onload = function () {
+  alert("Este es un mensaje de alerta");
+};

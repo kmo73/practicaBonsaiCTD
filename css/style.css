@@ -2,8 +2,90 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  color: red;
+html {
+  font-size: 62.5%; // esto es para responsive donde 1rem = 10px
+}
+
+body {
+  height: 100vh;
+}
+
+.background {
+  background-color: #f3fbff;
+  clip-path: polygon(35% 0%, 106% 0, 100% 58%, 60% 95%);
+  height: 100vh;
+}
+
+.site-container {
+  position: relative;
+  top: -100vh
+}
+
+.logo {
+  width: 16rem;
+  height: 5rem;
+}
+
+.navbar {
+  padding: 2rem 10rem;
+  /* position: relative;
+  top: -100vh; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4c4e5f
+}
+
+.navbar-container {
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-list-item svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.dropdown {
+  gap: 1.5rem;
+}
+
+a:link, a:visited {
+  color: #4c4e5f;
+  text-decoration: none;
+}
+
+.navbar-btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  border: 1px solid green;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: green;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.login {
+  background-color: #f3fbff;
+}
+
+.green {
+  color: white;
+  background-color: green;
 }

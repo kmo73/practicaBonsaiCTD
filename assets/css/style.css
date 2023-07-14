@@ -40,6 +40,7 @@ body {
 }
 
 .navbar-container {
+  height: 2.7rem;
   font-size: 2rem;
   list-style: none;
   display: flex;
@@ -60,6 +61,26 @@ body {
 
 .dropdown {
   gap: 1.5rem;
+}
+
+.navbar-dropdown-container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  list-style: none;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-dropdown-container li {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  transition: all 0.2s;
+}
+
+.navbar-dropdown-container li:hover {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
 }
 
 a:link,

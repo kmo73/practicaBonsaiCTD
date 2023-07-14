@@ -69,6 +69,8 @@ body {
   border-radius: 0.5rem;
   list-style: none;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
 }
 
 .navbar-dropdown-container li {

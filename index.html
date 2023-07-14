@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Bonsai</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <title>Bonsai</title>
+    </head>
 
   <body>
     <div class="background"></div>
@@ -21,35 +18,40 @@
         <img class="logo" src="./assets/img/logoBonsai.png" alt="logoBonsai" />
         <nav>
           <ul class="navbar-container">
-            <li class="nav-list-item dropdown">
-              Product
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                fill="#000000"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
-                ></path>
-              </svg>
-            </li>
-            <!--Como hacer un desplegable?-->
-            <li class="nav-list-item dropdown">
-              Templates
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                fill="#000000"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
-                ></path>
-              </svg>
-            </li>
+            <div>
+                <li class="nav-list-item dropdown">
+                    Product
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                </li>
+                <ul class="navbar-dropdown-container">
+                    <li>CRM</li>
+                    <li>Tracking</li>
+                </ul>
+            </div>
+            <div>
+                <li class="nav-list-item dropdown">
+                  Templates
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </li>
+                <ul class="navbar-dropdown-container">
+                    <li>Invoice</li>
+                    <li>Proposal</li>
+                    <li>Contract</li>
+                    <li>Agreement</li>
+                </ul>
+            </div>
             <li class="nav-list-item"><a href="#">Pricing</a></li>
             <li class="nav-list-item"><a href="#">Reviews</a></li>
             <li class="nav-list-item"><a href="#">FAQ's</a></li>

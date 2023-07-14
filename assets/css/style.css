@@ -78,7 +78,7 @@ body {
 }
 
 .navbar-dropdown-container li:hover {
-  background-color: green;
+  background-color: #00b289;
   color: #fff;
   cursor: pointer;
 }

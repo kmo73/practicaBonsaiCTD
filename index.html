@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Bonsai</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <title>Bonsai</title>
+    </head>
 
   <body>
     <div class="background"></div>
@@ -21,122 +18,115 @@
         <img class="logo" src="./assets/img/logoBonsai.png" alt="logoBonsai" />
         <nav>
           <ul class="navbar-container">
-            <li class="nav-list-item dropdown">
-              Product
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                fill="#000000"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
-                ></path>
-              </svg>
-            </li>
-            <!--Como hacer un desplegable?-->
-            <li class="nav-list-item dropdown">
-              Templates
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                fill="#000000"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
-                ></path>
-              </svg>
-            </li>
+            <div>
+                <li class="nav-list-item dropdown">
+                    Product
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                </li>
+                <ul class="navbar-dropdown-container">
+                    <li>CRM</li>
+                    <li>Tracking</li>
+                </ul>
+            </div>
+            <div>
+                <li class="nav-list-item dropdown">
+                  Templates
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </li>
+                <ul class="navbar-dropdown-container">
+                    <li>Invoice</li>
+                    <li>Proposal</li>
+                    <li>Contract</li>
+                    <li>Agreement</li>
+                </ul>
+            </div>
             <li class="nav-list-item"><a href="#">Pricing</a></li>
             <li class="nav-list-item"><a href="#">Reviews</a></li>
             <li class="nav-list-item"><a href="#">FAQ's</a></li>
           </ul>
         </nav>
         <div class="navbar-btns">
-          <button class="btn login">LOG IN</button>
+          <button class="btn login" id="login">LOG IN</button>
           <button class="btn green">SUBSCRIBE</button>
         </div>
-
       </header>
       <!-- End Header -->
 
       <main>
-        <div id="popup" class="popup">
-          <div class="popup-content">
-            <h2>Formulario de Registro</h2>
-            <!-- Aquí colocas tu formulario de registro -->
-            <form>
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required>
-            
-              <label for="contrasena">Contraseña:</label>
-              <input type="password" id="contrasena" name="contrasena" required>
+        <section class="main-cont">
+          <section class="container-plans">
+            <section class="plansYpricing">
+                <h1 class="plans-title">Plans & Pricing</h1>
+                <div class="tipoDePago">
+                    <p>MONTLY</p>
+                    <div class="toggle-button">
+                      <input type="checkbox" id="toggle" class="toggle-input">
+                      <label for="toggle" class="toggle-label"></label>
+                    </div>
+                    <!--Boton que selecciona alguna opción-->
+                    <P>YEARLY</P>
+                </div>
+            </section>
+    
+            <section class="cards">
+                <article class="card">
+                    <h2 class="title-plans">Workflow</h2>
+                    <span class="price-plan">$19</span>
+                    <span>/MONTH</span>
+                    <hr class="separador">
+                    <div>
+                        <ul class="lista">
+                            <li class="item">Unlimited Clients & Projects</li>
+                            <li class="item">Proposals</li>
+                            <li class="item">Contracts</li>
+                            <li class="item">Invoicing & Payments</li>
+                            <li class="item">Client CRM</li>
+                            <li class="item">Project Management</li>
+                            <li class="item">Task & Time Tracking</li>
+                            <li class="item">iOS, Android, Chrome & Mac Apps</li>
+                        </ul>
+                    </div>
+                    <button class="btn-plan btn green">START FREE</button>
+                </article>
+    
+                <article class="card plus">
+                    <h2 class="title-plans">Workflow Plus</h2> 
+                    <!--Como ponemos la bandera lateral "Most Popular"?-->
+                    <span class="price-plan">$29</span> 
+                    <span>/MONTH</span>
+                    <hr class="separador">
+                    <div>
+                        <ul class="lista">
+                            <li class="item">Everithing in Workflow, plus...</li>
+                            <li class="item">White-labelled client experience</li>
+                            <li class="item">Client forms and questinnaires <span class="indicador">new</span></li> 
+                            <li class="item">Workflow automations</li>
+                            <li class="item">Subcontracting (client-mode)</li>
+                            <li class="item">Calendly Integration</li>
+                            <li class="item">Client portal</li>
+                            <li class="item">Priority support</li>
+                        </ul>
+                    </div>
+                    <button class="btn-plan btn green">START FREE</button>
+                </article>
+            </section>
+          </section>
+        </section>
         
-              <button type="submit">Registrarse</button>
-              
-            </form>
-          </div>
-        </div>
-        <section class="planesYPrecios">
-          <h1 class="titulo1">Plans & Pricing</h1>
-          <div class="tipoDePago">
-            <p>2 MONTHS FREE!</p>
-            <!--Que onda la rayita que señala la promo por año?-->
-            <p>MONTLY</p>
-            <!--Boton que selecciona alguna opción-->
-            <p>YEARLY</p>
-          </div>
-        </section>
-
-        <section class="tarjetas">
-          <article class="comun">
-            <h2>Workflow</h2>
-            <p>$19</p>
-            <p>/MONTH</p>
-            <hr />
-            <div>
-              <ul>
-                <li>Unlimited Clients & Projects</li>
-                <li>Proposals</li>
-                <li>Contracts</li>
-                <li>Invoicing & Payments</li>
-                <li>Client CRM</li>
-                <li>Project Management</li>
-                <li>Task & Time Tracking</li>
-                <li>iOS, Android, Chrome & Mac Apps</li>
-              </ul>
-            </div>
-            <button>START FREE</button>
-          </article>
-
-          <article class="plus">
-            <h2>Workflow Plus</h2>
-            <!--Como ponemos la bandera lateral "Most Popular"?-->
-            <p>$29</p>
-            <p>/MONTH</p>
-            <hr />
-            <div>
-              <ul>
-                <li>Everithing in Workflow, plus...</li>
-                <li>White-labelled client experience</li>
-                <li>Client forms and questinnaires</li>
-                <p class="botonAmarillo">New</p>
-                <li>Workflow automations</li>
-                <li>Subcontracting (client-mode)</li>
-                <li>Calendly Integration</li>
-                <li>Client portal</li>
-                <li>Priority support</li>
-              </ul>
-            </div>
-            <button>START FREE</button>
-          </article>
-        </section>
-
         <h3>Super charge your work with add-ons</h3>
-
+        
         <section class="adicionales">
           <article class="collaborators">
             <div>
@@ -271,6 +261,23 @@
         </section>
       </footer>
     </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>Formulario de Registro</h2>
+        <!-- Aquí colocas tu formulario de registro -->
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" name="contrasena" required>
+    
+          <button type="submit">Registrarse</button>
+          
+        </form>
+      </div>
+    </div>
     <script src="./assets/js/main.js"></script>
+    
   </body>
 </html>

@@ -74,10 +74,10 @@ a:visited {
 }
 
 .btn {
-  border: 1px solid green;
+  border: 1px solid #00b289;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  color: green;
+  color: #00b289;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -88,5 +88,134 @@ a:visited {
 
 .green {
   color: white;
-  background-color: green;
+  background-color: #00b289;
+}
+
+.main-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-plans{
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+.plansYpricing{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 6rem 0rem 4rem 0rem;
+}
+
+.plans-title{
+  font-size: 3rem;
+  font-weight: 400;
+  
+}
+
+.tipoDePago{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.toggle-button {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 26px;
+  background-color: #00b289;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-label {
+  transform: translateX(24px);
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+  gap:8rem;
+}
+
+.card{
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+  padding:0rem 4rem 0rem 4rem;
+}
+
+.title-plans{
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2.5rem 0 1rem 0;
+}
+
+
+.price-plan{
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.separador{
+  border-width: 1.5px;
+  border-color: #00b289;
+}
+
+.lista{
+  list-style-type: "✓";
+}
+
+.item{
+  font-size: 15px;
+  padding-top: 1rem;
+  padding-left: 8px;
+}
+
+.item::marker{
+  color: #00b289; 
+  font-size: 20px;
+}
+
+.indicador{
+  color: white;
+  background-color: #f8db62;
+  
+  padding: 0 4px 0 4px;
+  border-radius: 5px;
+}
+
+.btn-plan{
+  margin: 25px 0 25px 0;
+  width: 100%;
 }

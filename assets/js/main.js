@@ -1,36 +1,34 @@
-/* Desplegables */
+var loginBtn = document.querySelector('.btn.login');
+var popup = document.getElementById('popup');
 
+// Función para mostrar el popup
+function mostrarPopup() {
+  popup.style.display = 'block';
+}
 
-/* Form */
+// Función para ocultar el popup
+function ocultarPopup() {
+  popup.style.display = 'none';
+}
 
-/* usuariosArray = [
-  {
-    usuario: "admin@admin.com",
-    password: "admin",
-  },
-  {
-    usuario: "soli@gmail.com",
-    password: "soli",
-  },
-];
+// Asigna el evento de clic al botón de login
+loginBtn.addEventListener('click', mostrarPopup);
 
-window.onload = function () {
-  // Login
-  document.getElementById("login").addEventListener("click", function () {
-    let usuarioIngresado = prompt("Ingrese su usuario");
+// Asigna el evento de clic al fondo del popup para ocultarlo
+popup.addEventListener('click', function(event) {
+  // Detiene la propagación del evento si se hace clic en el contenido del popup
+  if (event.target !== this) {
+    event.stopPropagation();
+  } else {
+    ocultarPopup();
+  }
+});
 
-    for (let index = 0; index < usuariosArray.length; index++) {
-      if (usuariosArray[index].usuario === usuarioIngresado) {
-        let passwordIngresado = prompt("Ingrese su contraseña");
-        if (usuariosArray[index].password === passwordIngresado) {
-          alert("Bienvenido " + usuarioIngresado);
-          return;
-        } else {
-          alert("Contraseña incorrecta");
-          return;
-        }
-      }
-    }
-  }); 
-};
-*/
+var registrationForm = document.getElementById('popup');
+
+registrationForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita que se envíe el formulario
+  var nombre = document.getElementById('nombre').value;
+  loginBtn.textContent = "Hola " + nombre; // Actualiza el texto del botón de login
+  ocultarPopup(); // Oculta el popup
+});

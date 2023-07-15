@@ -22,7 +22,8 @@
         <nav>
           <ul class="navbar-container">
             <div>
-              <li class="nav-list-item dropdown">
+              <!-- Products menu -->
+              <li class="nav-list-item dropdown" onclick="toggleTexto()">
                 Product
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -30,19 +31,26 @@
                   height="32"
                   fill="#000000"
                   viewBox="0 0 256 256"
+                  onclick="toggleMenu()"
                 >
                   <path
                     d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
                   ></path>
                 </svg>
               </li>
-              <ul class="navbar-dropdown-container">
+              <!-- Products sub-menu -->
+              <ul
+                class="navbar-dropdown-container"
+                id="contenido"
+                style="display: none"
+              >
                 <li>CRM</li>
                 <li>Tracking</li>
               </ul>
             </div>
             <div>
-              <li class="nav-list-item dropdown">
+              <!-- Templates menu -->
+              <li class="nav-list-item dropdown" onclick="toggleTexto2()">
                 Templates
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +64,12 @@
                   ></path>
                 </svg>
               </li>
-              <ul class="navbar-dropdown-container">
+              <!-- Templates sub-menu -->
+              <ul
+                class="navbar-dropdown-container"
+                id="contenido2"
+                style="display: none"
+              >
                 <li>Invoice</li>
                 <li>Proposal</li>
                 <li>Contract</li>
@@ -276,7 +289,7 @@
             <li><a href="#">Write for Us</a></li>
           </ul>
           <ul>
-            <li><a href="#">Compons</a></li>
+            <li><a href="#">Comparisons</a></li>
             <!--Falta desplegable-->
           </ul>
         </section>

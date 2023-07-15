@@ -401,3 +401,20 @@ a:visited {
   color: #00b289;
   cursor: pointer;
 }
+
+.footer {
+  clip-path: polygon(0% 0%, 106% 0%, 100% 58%, 60% 95%);
+  height: 40vh;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 2rem 10rem;
+  background-color: #f3fbff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+  color: #4c4e5f;
+}
+
+.listasDeFooter {
+list-style-type: none;
+}

@@ -23,7 +23,10 @@
           <ul class="navbar-container">
             <div>
               <!-- Products menu -->
-              <li class="nav-list-item dropdown" onclick="toggleTexto()">
+              <li
+                class="nav-list-item dropdown"
+                onclick="toggleTexto('products-sub-menu')"
+              >
                 Product
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +44,7 @@
               <!-- Products sub-menu -->
               <ul
                 class="navbar-dropdown-container"
-                id="contenido"
+                id="products-sub-menu"
                 style="display: none"
               >
                 <li>CRM</li>
@@ -50,7 +53,10 @@
             </div>
             <div>
               <!-- Templates menu -->
-              <li class="nav-list-item dropdown" onclick="toggleTexto2()">
+              <li
+                class="nav-list-item dropdown"
+                onclick="toggleTexto('templates-sub-menu')"
+              >
                 Templates
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +73,7 @@
               <!-- Templates sub-menu -->
               <ul
                 class="navbar-dropdown-container"
-                id="contenido2"
+                id="templates-sub-menu"
                 style="display: none"
               >
                 <li>Invoice</li>

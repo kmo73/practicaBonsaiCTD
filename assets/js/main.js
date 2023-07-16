@@ -33,29 +33,18 @@ registrationForm.addEventListener("submit", function (event) {
   ocultarPopup(); // Oculta el popup
 });
 
-//Funcion desplegable de menu
+// Funcion desplegable de menu
 var estadoVisible = false;
 
-function toggleTexto() {
-  var contenidoElemento = document.getElementById("contenido");
+function toggleTexto(id) {
+  var subMenu = document.getElementById(id);
+  estadoVisible = subMenu.style.display !== "none";
 
   if (estadoVisible) {
-    contenidoElemento.style.display = "none";
+    subMenu.style.display = "none";
     estadoVisible = false;
   } else {
-    contenidoElemento.style.display = "block";
-    estadoVisible = true;
-  }
-}
-
-function toggleTexto2() {
-  var contenidoElemento2 = document.getElementById("contenido2");
-
-  if (estadoVisible) {
-    contenidoElemento2.style.display = "none";
-    estadoVisible = false;
-  } else {
-    contenidoElemento2.style.display = "block";
+    subMenu.style.display = "block";
     estadoVisible = true;
   }
 }

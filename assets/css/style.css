@@ -82,8 +82,8 @@ body {
   cursor: pointer;
 }
 
-a:link,
-a:visited {
+.nav-list-item a:link,
+.nav-list-item a:visited {
   color: #4c4e5f;
   text-decoration: none;
 }
@@ -347,6 +347,7 @@ a:visited {
 .addon-link:visited {
   color: #00b289;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .addon-link:hover {

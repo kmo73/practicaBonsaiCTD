@@ -343,7 +343,7 @@ body {
   color: #636472;
 }
 
-.addon-link,
+.addon-link:link,
 .addon-link:visited {
   color: #00b289;
   font-weight: 600;

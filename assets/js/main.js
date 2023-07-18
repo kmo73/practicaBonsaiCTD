@@ -48,3 +48,5 @@ function toggleTexto(id) {
     estadoVisible = true;
   }
 }
+
+//Codigo Exe para guardar dropdown

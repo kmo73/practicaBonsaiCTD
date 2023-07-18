@@ -31,8 +31,6 @@ body {
 
 .navbar {
   padding: 2rem 10rem;
-  /* position: relative;
-  top: -100vh; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +57,7 @@ body {
   height: 2rem;
 }
 
-.down {
+.dropdown {
   gap: 1.5rem;
 }
 

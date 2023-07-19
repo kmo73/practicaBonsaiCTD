@@ -24,20 +24,20 @@ popup.addEventListener("click", function (event) {
   }
 });
 
-var registrationForm = document.getElementById("popup");
+let registrationForm = document.getElementById("popup");
 
 registrationForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Evita que se envíe el formulario
-  var nombre = document.getElementById("nombre").value;
+  let nombre = document.getElementById("nombre").value;
   loginBtn.textContent = "Hola " + nombre; // Actualiza el texto del botón de login
   ocultarPopup(); // Oculta el popup
 });
 
 // Funcion desplegable de menu
-var estadoVisible = false;
+let estadoVisible = false;
 
 function toggleTexto(id) {
-  var subMenu = document.getElementById(id);
+  let subMenu = document.getElementById(id);
 
   if (estadoVisible) {
     subMenu.style.display = "none";
@@ -51,9 +51,9 @@ function toggleTexto(id) {
 // Funcion para ocultar el submenu al hacer clic fuera de el
 //Declaracion de funcion
 function ocultarSubMenu(event, subMenuId, menuId) {
-  var targetElement = event.target; // Elemento clickeado
-  var subMenu = document.getElementById(subMenuId); // Elemento a desplegar
-  var menu = document.getElementById(menuId); // Elemento que contiene el submenu
+  let targetElement = event.target; // Elemento clickeado
+  let subMenu = document.getElementById(subMenuId); // Elemento a desplegar
+  let menu = document.getElementById(menuId); // Elemento que contiene el submenu
 
   if (targetElement !== subMenu && !menu.contains(targetElement)) {
     // Si se hace clic fuera del submenu

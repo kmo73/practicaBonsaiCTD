@@ -403,8 +403,8 @@ a:visited {
 }
 
 .footer {
-  clip-path: polygon(0% 0%, 106% 0%, 100% 58%, 60% 95%);
-  height: 40vh;
+  /*clip-path: polygon(0% 0%, 106% 0%, 100% 58%, 60% 95%);*/
+  height: 25vh;
   font-size: 1.4rem;
   font-weight: 300;
   padding: 2rem 10rem;

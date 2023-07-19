@@ -38,7 +38,6 @@ var estadoVisible = false;
 
 function toggleTexto(id) {
   var subMenu = document.getElementById(id);
-  estadoVisible = subMenu.style.display !== "none";
 
   if (estadoVisible) {
     subMenu.style.display = "none";
@@ -49,4 +48,27 @@ function toggleTexto(id) {
   }
 }
 
-//Codigo Exe para guardar dropdown
+// Funcion para ocultar el submenu al hacer clic fuera de el
+document.addEventListener("click", function (event) {
+  var targetElement = event.target; // Clicked element
+  var subMenu = document.getElementById("products-sub-menu"); // Elemento a desplegar
+  var menu = document.getElementById("products"); // Elemento que contiene el submenu
+
+  if (targetElement !== subMenu && !menu.contains(targetElement)) {
+    // Si se hace clic fuera del submenu
+    subMenu.style.display = "none"; // Oculta el submenu
+    estadoVisible = false; // Actualiza el estado
+  }
+});
+
+document.addEventListener("click", function (event) {
+  var targetElement1 = event.target; // Clicked element
+  var subMenu1 = document.getElementById("templates-sub-menu"); // Elemento a desplegar
+  var menu1 = document.getElementById("templates"); // Elemento que contiene el submenu
+
+  if (targetElement1 !== subMenu1 && !menu1.contains(targetElement1)) {
+    // Si se hace clic fuera del submenu
+    subMenu1.style.display = "none"; // Oculta el submenu
+    estadoVisible = false; // Actualiza el estado
+  }
+});

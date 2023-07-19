@@ -401,7 +401,7 @@ body {
   height: 25vh;
   font-size: 1.4rem;
   font-weight: 300;
-  padding: 2rem 10rem;
+  padding: 4rem 10rem;
   background-color: #f3fbff;
   display: flex;
   justify-content: space-evenly;
@@ -411,4 +411,8 @@ body {
 
 .listasDeFooter {
 list-style-type: none;
+}
+
+.titulosDeFooter {
+  margin-bottom: 1rem;
 }

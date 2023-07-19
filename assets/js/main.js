@@ -1,5 +1,5 @@
-var loginBtn = document.querySelector(".btn.login");
-var popup = document.getElementById("popup");
+let loginBtn = document.querySelector(".btn.login");
+let popup = document.getElementById("popup");
 
 // Función para mostrar el popup
 function mostrarPopup() {

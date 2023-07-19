@@ -49,26 +49,25 @@ function toggleTexto(id) {
 }
 
 // Funcion para ocultar el submenu al hacer clic fuera de el
-document.addEventListener("click", function (event) {
-  var targetElement = event.target; // Clicked element
-  var subMenu = document.getElementById("products-sub-menu"); // Elemento a desplegar
-  var menu = document.getElementById("products"); // Elemento que contiene el submenu
+//Declaracion de funcion
+function ocultarSubMenu(event, subMenuId, menuId) {
+  var targetElement = event.target; // Elemento clickeado
+  var subMenu = document.getElementById(subMenuId); // Elemento a desplegar
+  var menu = document.getElementById(menuId); // Elemento que contiene el submenu
 
   if (targetElement !== subMenu && !menu.contains(targetElement)) {
     // Si se hace clic fuera del submenu
     subMenu.style.display = "none"; // Oculta el submenu
     estadoVisible = false; // Actualiza el estado
   }
+}
+
+//Llama a la funcion
+document.addEventListener("click", function (event) {
+  ocultarSubMenu(event, "products-sub-menu", "products");
 });
 
+//Llama a la funcion
 document.addEventListener("click", function (event) {
-  var targetElement1 = event.target; // Clicked element
-  var subMenu1 = document.getElementById("templates-sub-menu"); // Elemento a desplegar
-  var menu1 = document.getElementById("templates"); // Elemento que contiene el submenu
-
-  if (targetElement1 !== subMenu1 && !menu1.contains(targetElement1)) {
-    // Si se hace clic fuera del submenu
-    subMenu1.style.display = "none"; // Oculta el submenu
-    estadoVisible = false; // Actualiza el estado
-  }
+  ocultarSubMenu(event, "templates-sub-menu", "templates");
 });

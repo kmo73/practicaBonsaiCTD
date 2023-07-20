@@ -1,18 +1,27 @@
 let loginBtn = document.querySelector(".btn.login");
 let popup = document.getElementById("popup");
+let subscribeBtn = document.getElementById("subscribe");
+let popupSubscribe = document.getElementById("popupSubscribe");
 
 // Función para mostrar el popup
 function mostrarPopup() {
   popup.style.display = "block";
+}
+function mostrarPopupSubscribe() {
+  popupSubscribe.style.display = "block";
 }
 
 // Función para ocultar el popup
 function ocultarPopup() {
   popup.style.display = "none";
 }
+function ocultarPopupSubscribe() {
+  popupSubscribe.style.display = "none";
+}
 
 // Asigna el evento de clic al botón de login
 loginBtn.addEventListener("click", mostrarPopup);
+subscribeBtn.addEventListener("click", mostrarPopupSubscribe);
 
 // Asigna el evento de clic al fondo del popup para ocultarlo
 popup.addEventListener("click", function (event) {
@@ -21,6 +30,15 @@ popup.addEventListener("click", function (event) {
     event.stopPropagation();
   } else {
     ocultarPopup();
+  }
+});
+
+popupSubscribe.addEventListener("click", function (event) {
+  // Detiene la propagación del evento si se hace clic en el contenido del popup
+  if (event.target !== this) {
+    event.stopPropagation();
+  } else {
+    ocultarPopupSubscribe();
   }
 });
 

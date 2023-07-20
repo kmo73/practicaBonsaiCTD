@@ -261,11 +261,13 @@ body {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .popup-content input[type="text"],
 .popup-content input[type="email"],
 .popup-content input[type="password"] {
+  font-size: 1.2rem;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -274,7 +276,7 @@ body {
 }
 
 .popup-content button[type="submit"] {
-  background-color: #4caf50;
+  background-color: #00b289;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -283,7 +285,7 @@ body {
 }
 
 .popup-content button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #00b289;
 }
 
 .btn-plan {

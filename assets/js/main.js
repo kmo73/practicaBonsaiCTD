@@ -3,6 +3,7 @@ let popup = document.getElementById("popup");
 let subscribeBtn = document.getElementById("subscribe");
 let popupSubscribe = document.getElementById("popupSubscribe");
 let buyNowBtn = document.getElementById("btnBuyNow");
+let buyNowBtn2 = document.getElementById("btnBuyNow2");
 let popupBuyNow = document.getElementById("popupBuyNow");
 
 // Función para mostrar el popup
@@ -31,6 +32,7 @@ function ocultarPopupBuyNow() {
 loginBtn.addEventListener("click", mostrarPopup);
 subscribeBtn.addEventListener("click", mostrarPopupSubscribe);
 buyNowBtn.addEventListener("click", mostrarPopupBuyNow);
+buyNowBtn2.addEventListener("click", mostrarPopupBuyNow);
 
 // Asigna el evento de clic al fondo del popup para ocultarlo
 popup.addEventListener("click", function (event) {
@@ -108,3 +110,26 @@ document.addEventListener("click", function (event) {
 document.addEventListener("click", function (event) {
   ocultarSubMenu(event, "templates-sub-menu", "templates");
 });
+
+function aceptarMedioPago() {
+  var mediosPago = document.getElementsByName("metodo_pago");
+  var medioPagoSeleccionado = "";
+
+  // Obtener el medio de pago seleccionado
+  for (var i = 0; i < mediosPago.length; i++) {
+    if (mediosPago[i].checked) {
+      medioPagoSeleccionado = mediosPago[i].value;
+      break;
+    }
+  }
+
+  if (medioPagoSeleccionado !== "") {
+    // Ocultar el popup de medios de pago
+    popupBuyNow.style.display = "none";
+
+    // Mostrar mensaje de subscripción exitosa
+    alert("¡Subscripción realizada con éxito! Medio de pago seleccionado: " + medioPagoSeleccionado);
+  } else {
+    alert("Por favor, selecciona un medio de pago.");
+  }
+}

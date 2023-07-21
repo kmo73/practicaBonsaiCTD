@@ -304,7 +304,7 @@ body {
 .title-addons > h3 {
   font-weight: 400;
   margin-bottom: 6rem;
-  margin-top: 8rem;
+  margin-top: 10rem;
   color: #4c4e5f;
 }
 
@@ -316,8 +316,8 @@ body {
 }
 
 .card-addon {
-  width: 120vh;
-  height: 14rem;
+  width: 67vw;
+  height: 20vh;
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -370,13 +370,12 @@ body {
   font-weight: 600;
 }
 
-.noPrice {
-  font-size: 2.7rem;
-  font-weight: 500;
-}
-
 .addon-month {
   font-size: 1.2rem;
+}
+
+.addon-month-hidden {
+  height: 1.7rem;
 }
 
 .addon-button {
@@ -397,6 +396,133 @@ body {
   color: #00b289;
   cursor: pointer;
 }
+
+/* Shortcut ------------------------------------*/
+
+.shortcut {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.shortcut-container {
+  width: 67vw;
+  height: 38vh;
+  background-color: #f3fbff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shortcut-tittle {
+  font-size: 3rem;
+  display: flex;
+  font-size: 3rem;
+  flex-direction: column;
+}
+
+.shortcut-tittle > h3 {
+  font-weight:500;
+}
+
+.shortcut-firts-tittle {
+  display: flex;
+  gap: 1rem;
+}
+
+.shortcut-firts-tittle > h3 {
+  font-weight:500
+}
+
+.yours {
+  color: #00b289;
+}
+
+.shortcut-button {
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background-color: #00b289;
+  border-radius: 1rem;
+  border: 1px #00b289 solid
+}
+
+.shortcut-button:hover {
+  background-color: white;
+  color: #00b289;
+  cursor: pointer;
+  transition: all 0.3s; 
+}
+
+
+/* Reviews ------------------------------------------*/
+
+.reviews {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.review-titlle {
+  font-size: 2.5rem;
+  margin: 5rem 0rem 0rem 23rem;
+  color: #00b289;
+  font-weight: 500;
+}
+
+.review-card {
+  padding: 3rem;
+  width: 33.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.review-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.review-descrip {
+  width: 41rem;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.456);
+}
+
+/* Estrella de la review -------------------*/
+
+.review-stars {
+  direction: rtl;
+}
+
+.review-stars input {
+  display: none;
+}
+
+.review-stars label {
+  display: inline-block;
+  width: 2.1rem;
+  height: 20px;
+  background-image: url(/assets/img/greyStar.png);
+  background-size: cover;
+}
+
+.review-stars input:hover ~ label {
+  background-image: url(/assets/img/goldStar.png);
+  cursor:pointer;
+}
+
+.review-stars input:checked ~ label {
+  background-image: url(/assets/img/goldStar.png);
+}
+
+
+
+
+
 
 .footer {
   height: 25vh;

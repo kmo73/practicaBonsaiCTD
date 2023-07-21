@@ -288,6 +288,22 @@ body {
   background-color: #00b289;
 }
 
+/* Agregar un estilo para el mensaje de éxito */
+.success-message {
+  display: block;
+  background-color: #32CD32;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Agregar una clase para ocultar el mensaje por defecto */
+.hidden {
+  display: none;
+}
+
 .btn-plan {
   margin: 25px 0 25px 0;
   width: 100%;

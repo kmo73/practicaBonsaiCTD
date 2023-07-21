@@ -130,7 +130,7 @@
                     <li class="item">iOS, Android, Chrome & Mac Apps</li>
                   </ul>
                 </div>
-                <button class="btn-plan btn green">START FREE</button>
+                <button class="btn-plan btn green" id="btnBuyNow">START FREE</button>
               </article>
 
               <article class="card plus">
@@ -304,6 +304,27 @@
           <input type="password" id="contrasenas" name="contrasena" required />
 
           <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Popup buy now -->
+
+    <div id="popupBuyNow" class="popup">
+      <div class="popup-content">
+        <h2>Seleccione su método de pago</h2>
+        <!-- Metodos de pago -->
+        <form>
+          <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" required>
+          <label for="tarjeta">Tarjeta de crédito/débito</label>
+
+          <input type="radio" id="paypal" name="metodo_pago" value="paypal" required>
+          <label for="paypal">PayPal</label>
+
+          <input type="radio" id="transferencia" name="metodo_pago" value="transferencia" required>
+          <label for="transferencia">Transferencia bancaria</label>
+
+          <button type="submit">Avanzar</button>
         </form>
       </div>
     </div>

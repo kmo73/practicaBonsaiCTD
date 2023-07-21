@@ -2,6 +2,8 @@ let loginBtn = document.querySelector(".btn.login");
 let popup = document.getElementById("popup");
 let subscribeBtn = document.getElementById("subscribe");
 let popupSubscribe = document.getElementById("popupSubscribe");
+let buyNowBtn = document.getElementById("btnBuyNow");
+let popupBuyNow = document.getElementById("popupBuyNow");
 
 // Función para mostrar el popup
 function mostrarPopup() {
@@ -9,6 +11,9 @@ function mostrarPopup() {
 }
 function mostrarPopupSubscribe() {
   popupSubscribe.style.display = "block";
+}
+function mostrarPopupBuyNow() {
+  popupBuyNow.style.display = "block";
 }
 
 // Función para ocultar el popup
@@ -18,10 +23,14 @@ function ocultarPopup() {
 function ocultarPopupSubscribe() {
   popupSubscribe.style.display = "none";
 }
+function ocultarPopupBuyNow() {
+  popupBuyNow.style.display = "none";
+}
 
-// Asigna el evento de clic al botón de login
+// Asigna el evento de clic al botón de login - subscribe - buy now
 loginBtn.addEventListener("click", mostrarPopup);
 subscribeBtn.addEventListener("click", mostrarPopupSubscribe);
+buyNowBtn.addEventListener("click", mostrarPopupBuyNow);
 
 // Asigna el evento de clic al fondo del popup para ocultarlo
 popup.addEventListener("click", function (event) {
@@ -42,12 +51,22 @@ popupSubscribe.addEventListener("click", function (event) {
   }
 });
 
+popupBuyNow.addEventListener("click", function (event) {
+  // Detiene la propagación del evento si se hace clic en el contenido del popup
+  if (event.target !== this) {
+    event.stopPropagation();
+  } else {
+    ocultarPopupBuyNow();
+  }
+});
+
 let registrationForm = document.getElementById("popup");
 
 registrationForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Evita que se envíe el formulario
   let nombre = document.getElementById("nombre").value;
   loginBtn.textContent = "Hola " + nombre; // Actualiza el texto del botón de login
+  subscribeBtn.style.display = "none"; // Ocultar el subscribe
   ocultarPopup(); // Oculta el popup
 });
 

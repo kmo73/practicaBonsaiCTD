@@ -103,22 +103,23 @@ body {
 }
 
 .login {
-  color: white;
-  background-color: #00b289;
+  background-color: #f3fbff;
 }
+
 .login:hover {
-  color: #00b289;
-  background-color: white;
+  color: #fff;
+  background-color: #00b289;
   cursor: pointer;
 }
 
 .green {
   color: white;
   background-color: #00b289;
+  transition: all 0.3s;
 }
+
 .green:hover {
-  color: #00b289;
-  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
